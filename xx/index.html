@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Barbershop "Borodinsky"</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="#">
+        <img src="img/index-logo.svg" alt="Logo of Barbershop Borodinsky" width="371" height="155">
+      </a>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prices.html">Price List</a></li>
+            
+          </ul>
+          <ul class="user-navigation">
+            <li><a class="login-link" href="form.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="visually-hidden">Barbershop "Liyass"</h1>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Advantages</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3>Fast</h3>
+            <p>We work quickly! Two hours will fly by, and you'll have a stylish haircut in no time!</p>
+          </li>
+          <li class="advantages-item">
+            <h3>Cool</h3>
+            <p>Forget how you used to get haircuts. We'll make you look like a football or movie star—at least on the outside.</p>
+          </li>
+          <li class="advantages-item">
+            <h3>Expensive</h3>
+            <p>Our masters are professionals and cannot be cheap. Besides, doesn't the price give you a certain status?</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="index-columns">
+        <section class="news">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>We finally have Jägermeister! Now you can enjoy a drink during your haircut.</p>
+              <time datetime="2018-01-11">January 11</time>
+            </li>
+            <li class="news-item">
+              <p>We have a new team member! Boris "Blade" Strigunets, a holder of many titles and awards, has joined our ranks.</p>
+              <time datetime="2018-01-18">January 18</time>
+            </li>
+          </ul>
+          
+        </section>
+
+        <section class="gallery">
+          <h2>Photo Gallery</h2>
+          <div class="gallery-container">
+            <figure class="gallery-content">
+              <a href="#"><img src="img/interior.jpg" alt="Interior" width="286" height="164"></a>
+            </figure>
+            <button class="button" disabled>Back</button>
+            <button class="button">Next</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="index-columns">
+        <section class="contacts">
+          <h2>Contact Information</h2>
+          <address class="contacts-address">
+            Barbershop "Borodinsky" <br>
+            Address: Rabat, Ycoub mansour <br>
+            Phone: <a href="tel:+74956660266">0637897956</a>
+          </address>
+          <p>
+            Working hours:<br> Mon–Fri: 10:00 to 22:00<br> Sat–Sun: 10:00 to 19:00
+          </p>
+          <a class="button contacts-button-map" href="map.html">How to Find Us</a>
+          <a class="button" href="contacts.html">Feedback</a>
+        </section>
+
+        <section class="appointment">
+          <h2>Make an Appointment</h2>
+          <p class="appointment-info">Specify your desired date and time, and we'll contact you to confirm your booking.</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="appointment-form-item">
+              <label for="date">Date</label>
+              <input id="date" type="date" name="date" value="2025-01-02">
+            </p>
+            <p class="appointment-form-item">
+              <label for="time">Time</label>
+              <input id="time" type="time" name="time" value="10:00">
+            </p>
+            <p class="appointment-form-item">
+              <label for="name">Your Name</label>
+              <input id="name" type="text" name="name" placeholder="Beard" required>
+            </p>
+            <p class="appointment-form-item">
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" name="phone" placeholder="06XXXXXX" required>
+            </p>
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+     <footer class="main-footer">
+        <div class="container">
+            <address class="footer-address">
+                Barbershop "liyass" <br>
+                Address: Rabat, Ycoub mnsour <br>
+                <a href="map.html">Find us here</a> <br>
+                Phone: <a href="tel:+212637897956">+212 63 789 7956</a> <br>
+                Email: <a href="mailto:elfellakiilyass@gmail.com">elfellakiilyass@gmail.com</a>
+            </address>
+
+            
+
+            <div class="footer-copyright">
+                <b>Developed by:</b>
+                <a class="button" href="https://www.linkedin.com/in/ilyass-el-fellaki/">ilyass el fellaki</a>
+            </div>
+        </div>
+    </footer>
+
+  <section class="modal modal-login">
+    <h2>Personal Account</h2>
+    <!-- Modal content here -->
+  </section>
+
+</body>
+
+</html>
+
+
+  <section class="modal modal-login">
+    <h2>Personal Account</h2>
+    <p class="modal-description">Please enter your username and password</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label class="visually-hidden" for="login">Username</label>
+            <input class="login-icon-user" id="login" type="text" name="login" placeholder="Enter your username">
+        </p>
+        <p>
+            <label class="visually-hidden" for="password">Password</label>
+            <input class="login-icon-password" id="password" type="password" name="password" placeholder="Enter your password">
+        </p>
+        <p class="login-help">
+            <label class="login-checkbox">
+                <input class="visually-hidden" id="remember" type="checkbox" name="remember" checked>
+                <span class="checkbox-indicator"></span>
+                Remember me
+            </label>
+            <a class="restore" href="#">Forgot your password?</a>
+        </p>
+        <button class="button" type="submit">Log in</button>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Close</span></button>
+</section>
+
+<section class="modal modal-map">
+    <h2 class="visually-hidden">How to find us</h2>
+    <iframe src="https://maps.google.com/maps?q=32.2978,-9.2316&z=15&output=embed" 
+        width="766" height="560" allowfullscreen></iframe>
+    <img src="img/map.jpg" width="766" height="560" alt="We are located at the specified address">
+    <button class="modal-close" type="button"><span class="visually-hidden">Close</span></button>
+</section>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
